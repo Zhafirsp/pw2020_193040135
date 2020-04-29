@@ -1,0 +1,52 @@
+body {
+	background-color: black;
+	background-image: url(../assets/img/torus.png);
+	background-repeat: repeat;
+	background-position-y: -330px;
+	background-position-x: 40px;
+	color: whitesmoke;
+}
+img {
+	width: 250px;
+}
+.container {
+	text-align: center;
+}
+button {
+	background-color: antiquewhite;
+	border-radius: 30px;
+	cursor: pointer;
+}
+button:hover {
+	color: darkred;
+}
+.link {
+	font-size: 20px;
+	color: wheat;
+	text-decoration: none;
+}
+.link:hover {
+	color: aliceblue;
+}
+.link:visited {
+	color: cornflowerblue;
+}
+a {
+	font-size: 20px;
+	color: wheat;
+}
+.disini {
+	color: black;
+	text-decoration: none;
+}
+.disini:hover {
+	color: darkred;
+}
+.login {
+	margin-left: 550px;
+	margin-top: 220px;
+}
+.register {
+	margin-left: 555px;
+	margin-top: 260px;
+}
