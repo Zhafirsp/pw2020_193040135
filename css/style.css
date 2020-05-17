@@ -1,0 +1,27 @@
+body {
+	height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.slider h3, .slider h5, .clients h3{
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.7)
+}
+.parallax-container {
+	height: 20%;
+}
+.parallax img{
+	opacity: 0.3 !important;
+}
+section, footer {
+	padding: 20px 0 ;
+}
+table {
+	margin-top: -10px;
+}
+.table-isi {
+	height: 1000222px;
+}

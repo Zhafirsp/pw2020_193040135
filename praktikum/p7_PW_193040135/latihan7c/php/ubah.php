@@ -85,7 +85,7 @@ if (isset($_POST['ubah'])) {
           <input type="text" name="logo_merk" id="logo_merk" required value="<?= $brg['logo_merk']; ?>"><br><br>
         </li>
         <br>
-        <button type="submit" name="ubah" class="tombol_login">Ubah Data</button>
+        <button type="submit" name="ubah">Ubah Data</button>
         <button type="submit">
           <a href="../index.php" style="text-decoration: none; color:black">Kembali</a>
         </button>
