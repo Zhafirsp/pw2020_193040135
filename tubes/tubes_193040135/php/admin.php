@@ -11,10 +11,15 @@ require 'functions.php';
 // melakukan query
 $apparel = query("SELECT * FROM apparel");
 
-// membuat php cari
-if (isset($_GET['cari'])) {
-  $apparel = cari($_GET['keyword']);
-}
+	//ketika tombol cari di klik
+	if (!empty($_GET['cari'])) {
+		$keyword = $_GET['keyword'];
+		$apparel = query("SELECT * FROM apparel WHERE 
+              nama_barang LIKE '%$keyword%' OR
+              merk LIKE '%$keyword%'");
+	} else {
+		$apparel = query("SELECT * FROM apparel");
+	}
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +80,7 @@ if (isset($_GET['cari'])) {
     <li><a href="logout.php" class="logout white-text">Logout</a></li>
     <li>
       <form action="" method="GET">
-        <input type="text" name="keyword" placeholder="Masukan keyword pencarian" autocomplete="off" autofocus class="keyword" style="color: white">
+        <input type="text" name="keyword" placeholder="Search" autocomplete="off" autofocus class="keyword" style="color: white">
         <button type="submit" name="cari" class="tombol-cari">cari</button>
       </form>
     </li>
